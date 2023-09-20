@@ -7,7 +7,7 @@ for each in file:
     for item in each:
         if item.isascii() and not item.isalnum() and item != '\n':
             spc += item
-        if each.index(item) == 5:
+        if each.index(item)%5 == 0:
             #print(item, end = " ")
             fout.write(item)
 print(spc)
