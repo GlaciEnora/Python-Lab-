@@ -29,7 +29,9 @@ class Operation(Operand, Operator):
         Operator.__init__(self)
         Operand.getdata(self)
         super(Operand, self).getdata()
-
+        
+############################             Remove the try block for Ques 2                ############################
+    
     def calculation(self):
         try:
             if (self.opnd1 not in range(10000, 20001)) and (self.opnd2 not in range(10000, 20001)):
